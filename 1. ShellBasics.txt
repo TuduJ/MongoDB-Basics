@@ -1,6 +1,6 @@
 //The following document has MongoDB's basic commands:
 
-sudo systemctl start mongod //starts mongo service
+sudo systemctl start mongod //starts mongo service //linux
 
 mongo //starts mongo console
 
