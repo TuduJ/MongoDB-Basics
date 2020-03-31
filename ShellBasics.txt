@@ -1,0 +1,25 @@
+//The following document has MongoDB's basic commands:
+
+sudo systemctl start mongod //starts mongo service
+
+mongo //starts mongo console
+
+show dbs //shows databases
+
+use demo //creates a database named demo, if exists then uses it
+
+db.dogs.insert({name: "Tom", breed:"Mutt"}) //makes a collection dogs in demo and inserts a object in it
+
+show collections //show collections
+
+db.dogs.find() //returns everything in the collection if not specified anything
+
+db.dogs.find({name:"Matt"}) //to find specific data
+
+db.dogs.update({name:"Matt"}, {name:"Tommy"}) //update but this overwrites all other data, changes name from Matt to Tommy
+
+db.dogs.update({name:"Tommy"}, {$set:{name:"Tom", isCute:true}}) //updates without deleting other keys
+
+db.dogs.remove({breed:"Mutt"}) //remove everything that matches
+
+db.dogs.remove({breed:"Mutt"}).limit(1) //remove only 1
