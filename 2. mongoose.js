@@ -8,7 +8,7 @@ var dogSchema = new mongoose.Schema({               //creating a schema
     breed: String
 });
 
-var Dog = mongoose.model("Dogy", dogSchema);         //creating a model //Dog is the single version of the model  //dogy pluralised will be the collection name
+var Dog = mongoose.model("Dogs", dogSchema);         //creating a model //Dog is the single version of the model  //dog pluralised will be the collection name
 
 var Tom = new Dog({             
     name: "Tom",
